@@ -27,53 +27,30 @@ EcoPackAI Sustainable Packaging Recommendation System
 
 <div class="mb-3">
 <label class="form-label">Strength Score (1 – 10)</label>
-<input type="number"
-       id="strength"
-       class="form-control"
-       placeholder="Example: 8"
-       min="1"
-       max="10"
-       step="0.1"
-       required>
+<input type="number" id="strength" class="form-control"
+placeholder="Example: 8" min="1" max="10" step="0.1">
 </div>
 
 <div class="mb-3">
 <label class="form-label">Weight Capacity (kg)</label>
-<input type="number"
-       id="weight"
-       class="form-control"
-       placeholder="Example: 12"
-       min="0"
-       step="0.1"
-       required>
+<input type="number" id="weight" class="form-control"
+placeholder="Example: 12" min="0" step="0.1">
 </div>
 
 <div class="mb-3">
 <label class="form-label">Biodegradability Score (1 – 10)</label>
-<input type="number"
-       id="bio"
-       class="form-control"
-       placeholder="Example: 7"
-       min="1"
-       max="10"
-       step="0.1"
-       required>
+<input type="number" id="bio" class="form-control"
+placeholder="Example: 7" min="1" max="10" step="0.1">
 </div>
 
 <div class="mb-3">
 <label class="form-label">Recyclability Percentage (0 – 100)</label>
-<input type="number"
-       id="recycle"
-       class="form-control"
-       placeholder="Example: 85"
-       min="0"
-       max="100"
-       step="1"
-       required>
+<input type="number" id="recycle" class="form-control"
+placeholder="Example: 85" min="0" max="100" step="1">
 </div>
 
 <button class="btn btn-primary w-100 mt-2"
-        onclick="predict()">
+onclick="predict()">
 Get Recommendation
 </button>
 
@@ -111,14 +88,12 @@ Get Recommendation
 <table class="table table-bordered table-striped mt-3">
 
 <thead class="table-dark">
-
 <tr>
 <th>Material Name</th>
 <th>Predicted Cost</th>
 <th>Predicted CO₂</th>
 <th>Final Score</th>
 </tr>
-
 </thead>
 
 <tbody id="rankingTable"></tbody>
@@ -126,38 +101,39 @@ Get Recommendation
 </table>
 
 <button class="btn btn-success w-100"
-        onclick="loadRanking()">
+onclick="loadRanking()">
 Load Material Ranking
 </button>
 
 </div>
 
 
-<!-- ================= NAVIGATION CARD ================= -->
-<div class="card p-4 mt-4 shadow">
+<!-- ================= NAVIGATION CARD (LAST) ================= -->
+<div class="card p-4 mt-4 shadow mb-5">
 
-<h4>Navigation</h4>
+<h4 class="text-center">Navigation</h4>
 
 <div class="d-grid gap-2 mt-3">
 
 <button class="btn btn-info"
-        onclick="goToDashboard()">
-View Analytics Dashboard
+onclick="goToDashboard()">
+📊 View Analytics Dashboard
 </button>
 
 <button class="btn btn-secondary"
-        onclick="goToRankingAPI()">
-View Ranking API (JSON)
+onclick="goToRankingAPI()">
+📄 View Ranking API (JSON)
 </button>
 
 <button class="btn btn-dark"
-        onclick="goToHomeAPI()">
-View API Status
+onclick="goToHomeAPI()">
+⚙ View API Status
 </button>
 
 </div>
 
 </div>
+
 
 </div>
 
@@ -165,8 +141,6 @@ View API Status
 <!-- ================= JAVASCRIPT ================= -->
 <script>
 
-
-/* ================= PREDICT ================= */
 
 async function predict(){
 
@@ -176,11 +150,9 @@ const bio = parseFloat(document.getElementById("bio").value);
 const recycle = parseFloat(document.getElementById("recycle").value);
 
 if(isNaN(strength) || isNaN(weight) || isNaN(bio) || isNaN(recycle)){
-    alert("Please fill all fields correctly.");
-    return;
+alert("Please fill all fields correctly.");
+return;
 }
-
-try{
 
 let response = await fetch("/recommend", {
 
@@ -201,11 +173,6 @@ recyclability_percent: recycle
 
 let result = await response.json();
 
-if(result.status === "error"){
-    alert(result.message);
-    return;
-}
-
 document.getElementById("cost").innerText =
 result.predicted_cost.toFixed(2);
 
@@ -215,29 +182,15 @@ result.predicted_co2.toFixed(2);
 document.getElementById("score").innerText =
 result.suitability_score.toFixed(2);
 
-}catch(error){
-
-alert("Error connecting to server");
-
-}
-
 }
 
 
-/* ================= LOAD RANKING ================= */
 
 async function loadRanking(){
-
-try{
 
 let response = await fetch("/rank-materials");
 
 let result = await response.json();
-
-if(result.status === "error"){
-    alert(result.message);
-    return;
-}
 
 let table = document.getElementById("rankingTable");
 
@@ -246,45 +199,29 @@ table.innerHTML = "";
 result.data.forEach(row => {
 
 table.innerHTML += `
-
 <tr>
 <td>${row.material_name}</td>
 <td>₹ ${row.predicted_cost.toFixed(2)}</td>
 <td>${row.predicted_co2.toFixed(2)} kg</td>
 <td>${row.final_score.toFixed(2)}</td>
 </tr>
-
 `;
 
 });
 
-}catch(error){
-
-alert("Error loading ranking");
-
 }
 
-}
-
-
-/* ================= NAVIGATION ================= */
 
 function goToDashboard(){
-
 window.location.href = "/dashboard";
-
 }
 
 function goToRankingAPI(){
-
 window.location.href = "/rank-materials";
-
 }
 
 function goToHomeAPI(){
-
 window.location.href = "/";
-
 }
 
 
