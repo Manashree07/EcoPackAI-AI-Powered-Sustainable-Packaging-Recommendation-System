@@ -1,7 +1,7 @@
 import os
 from sqlalchemy import create_engine
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("postgresql://postgres:Shrutik1008@localhost:5432/ecopackai")
 
 # Fix postgres:// issue
 if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
@@ -13,3 +13,4 @@ engine = create_engine(
 )
 
 print("Database connected successfully")
+
