@@ -1,7 +1,8 @@
 function goToDashboard(){
-    window.location.href = "/dashboard";
+    window.location.href = "/dashboard.html";
 }
 
 function goToRankingAPI(){
-    window.location.href = "/rank-materials";
+    window.location.href = "/ranking.html";
 }
+
