@@ -1,0 +1,101 @@
+material_id,material_name,material_type,strength_score,weight_capacity_kg,biodegradability_score,recyclability_percent,co2_emission_kg,cost_per_kg,water_resistance,food_safe,industry_usage,sustainability_rating,co2_impact_index,cost_efficiency_index,material_suitability_score
+1,Corrugated Cardboard,Paper-Based,7.5,15.0,0.85,90,0.7,1.2,Medium,True,E-commerce,A,0.04666666666666666,12.5,14.25
+2,Molded Pulp,Pulp-Based,6.8,10.0,0.95,95,0.6,1.5,Low,True,Electronics,A,0.06,6.666666666666667,8.566666666666666
+3,PLA (Corn Starch),Plant-Based Polymer,8.2,20.0,0.7,0,1.4,2.8,High,True,Food,B,0.06999999999999999,7.142857142857143,7.842857142857143
+4,Glass Jar (Virgin),Glass,9.5,30.0,0.0,100,1.8,3.5,High,True,Beverages,B,0.060000000000000005,8.571428571428571,9.571428571428571
+5,Aluminum Foil,Metal,5.0,2.0,0.0,95,2.2,4.0,High,True,Food,C,1.1,0.5,1.45
+6,Bamboo Fiber,Natural Fiber,8.0,15.0,0.9,85,0.9,2.5,Medium,True,Cosmetics,A,0.060000000000000005,6.0,7.75
+7,Mushroom Packaging,Mycelium,6.5,8.0,0.99,0,0.3,3.0,Low,True,Luxury,A,0.0375,2.6666666666666665,3.6566666666666663
+8,Recycled HDPE,Recycled Plastic,8.8,25.0,0.1,100,1.2,1.8,High,False,Industrial,B,0.048,13.88888888888889,14.988888888888889
+9,Honeycomb Paper,Paper-Based,9.0,40.0,0.88,95,0.8,2.0,Low,False,Furniture,A,0.02,20.0,21.83
+10,Kraft Paper,Paper-Based,6.0,5.0,0.9,100,0.5,0.9,Low,True,Apparel,A,0.1,5.555555555555555,7.455555555555556
+11,Bio-Based Stretch Film,Plant-Based Polymer,7.2,12.0,0.65,60,1.5,2.2,High,True,Logistics,B,0.125,5.454545454545454,6.704545454545454
+12,Recycled PET,Recycled Plastic,8.5,20.0,0.15,100,1.1,1.6,High,True,Beverages,B,0.05500000000000001,12.5,13.65
+13,Hemp Plastic,Natural Fiber,8.4,18.0,0.8,50,0.7,3.2,High,False,Automotive,A,0.03888888888888889,5.625,6.925
+14,Glassine Paper,Paper-Based,4.5,1.5,0.92,100,0.6,1.4,Medium,True,Bakery,A,0.39999999999999997,1.0714285714285714,2.991428571428571
+15,Steel Tin,Metal,9.8,50.0,0.0,100,2.5,3.8,High,True,Pantry,C,0.05,13.157894736842106,14.157894736842106
+16,Seaweed Film,Natural Fiber,3.0,0.5,1.0,0,0.1,5.0,Low,True,Food,A,0.2,0.1,1.1
+17,Padded Paper Mailer,Paper-Based,6.5,4.0,0.85,90,0.9,1.1,Medium,False,E-commerce,A,0.225,3.6363636363636362,5.386363636363637
+18,Carnauba Waxed Paper,Natural Fiber,5.5,3.0,0.95,80,0.8,2.0,High,True,Dairy,A,0.26666666666666666,1.5,3.25
+19,Recycled Poly Mailer,Recycled Plastic,7.8,10.0,0.05,100,1.0,0.8,High,False,Apparel,B,0.1,12.5,13.55
+20,Jute Fabric Bag,Natural Fiber,9.2,35.0,0.98,100,0.4,2.2,Medium,True,Grains,A,0.011428571428571429,15.909090909090908,17.889090909090907
+21,Sugarcane Bagasse,Pulp-Based,6.2,7.0,0.96,90,0.5,1.7,Medium,True,Food,A,0.07142857142857142,4.11764705882353,5.97764705882353
+22,Acid-Free Tissue,Paper-Based,2.0,0.2,0.95,100,0.4,1.5,Low,False,Fashion,A,2.0,0.13333333333333333,2.0833333333333335
+23,Wood-Pulp Cellophane,Natural Fiber,5.2,2.5,0.9,0,1.1,2.5,Medium,True,Confectionery,A,0.44000000000000006,1.0,1.9
+24,Burlap Sack,Natural Fiber,9.5,45.0,0.99,100,0.5,1.9,Medium,True,Agriculture,A,0.011111111111111112,23.68421052631579,25.67421052631579
+25,Coconut Husk Fiber,Natural Fiber,7.5,12.0,0.97,0,0.6,2.8,Medium,False,Home Decor,A,0.049999999999999996,4.285714285714286,5.255714285714285
+26,Recycled Aluminum,Metal,9.0,25.0,0.0,100,0.3,4.5,High,True,Beverages,A,0.012,5.555555555555555,6.555555555555555
+27,Cork Sheets,Natural Fiber,6.0,5.0,0.95,70,0.4,3.5,High,False,Gifts,A,0.08,1.4285714285714286,3.0785714285714283
+28,Starch-based Loose Fill,Plant-Based Polymer,2.5,1.0,1.0,0,0.5,1.2,Low,True,Shipping,A,0.5,0.8333333333333334,1.8333333333333335
+29,Recycled Cardboard (Heavy),Paper-Based,8.5,25.0,0.8,95,0.6,1.4,Low,False,Industrial,A,0.024,17.857142857142858,19.607142857142858
+30,Bio-PET (30% Plant),Plant-Based Polymer,8.5,20.0,0.1,90,1.6,2.0,High,True,Personal Care,B,0.08,10.0,11.0
+31,Peel-and-Stick Grass Paper,Natural Fiber,5.8,4.0,0.92,100,0.4,2.4,Low,False,Labels,A,0.1,1.6666666666666667,3.586666666666667
+32,Liquid Packaging Board,Multi-Layer,7.2,15.0,0.4,65,1.2,1.9,High,True,Dairy,C,0.08,7.894736842105264,8.944736842105264
+33,PHA (Marine Biodegradable),Plant-Based Polymer,7.9,15.0,1.0,0,1.3,4.2,High,True,Consumer Goods,A,0.08666666666666667,3.571428571428571,4.571428571428571
+34,Recycled Corrugated PP,Recycled Plastic,9.1,30.0,0.05,100,1.3,2.5,High,False,Logistics,B,0.043333333333333335,12.0,13.05
+35,Mycelium Composite (Insulated),Natural Fiber,7.0,10.0,0.98,0,0.4,3.2,Medium,True,Cold Chain,A,0.04,3.125,4.105
+36,Greaseproof Paper,Paper-Based,5.0,2.0,0.92,100,0.6,1.1,Medium,True,Fast Food,A,0.3,1.8181818181818181,3.7381818181818183
+37,Recycled Steel Strap,Metal,9.9,100.0,0.0,100,1.2,1.8,High,False,Heavy Industry,B,0.012,55.55555555555556,56.55555555555556
+38,Stone Paper (Calcium Carbonate),Mineral-Based,8.0,12.0,0.3,0,0.8,2.6,High,False,Luxury,C,0.06666666666666667,4.615384615384615,4.915384615384615
+39,Crushed Eggshell Plastic,Bio-Composite,7.4,14.0,0.6,40,0.9,2.1,High,False,Garden,B,0.0642857142857143,6.666666666666666,7.666666666666666
+40,Pine Wood Crate,Natural Fiber,9.6,60.0,0.95,100,0.2,2.5,Medium,True,Agriculture,A,0.0033333333333333335,24.0,25.95
+41,Woven Polypropylene,Plastic,8.8,50.0,0.0,80,2.0,1.5,High,False,Construction,D,0.04,33.333333333333336,34.13333333333333
+42,Compostable Coffee Pods,Plant-Based Polymer,4.0,0.5,1.0,0,1.1,5.5,High,True,Beverages,A,2.2,0.09090909090909091,1.0909090909090908
+43,Recycled Glass (Amber),Glass,9.5,30.0,0.0,100,0.9,3.0,High,True,Pharma,A,0.030000000000000002,10.0,11.0
+44,Bagasse Clamshell,Pulp-Based,5.5,4.0,0.98,90,0.5,1.3,Low,True,Food Service,A,0.125,3.0769230769230766,4.9569230769230765
+45,Expanded Polypropylene (EPP),Recycled Plastic,8.2,18.0,0.05,95,1.4,2.8,High,False,Automotive,B,0.07777777777777778,6.428571428571429,7.428571428571429
+46,Bamboo Paper,Paper-Based,6.8,8.0,0.94,95,0.7,1.8,Low,True,Household,A,0.0875,4.444444444444445,6.334444444444444
+47,Silicone (Reusable),Polymer,9.0,15.0,0.0,0,3.5,8.0,High,True,Kitchenware,D,0.23333333333333334,1.875,1.875
+48,Recycled Paper Pulp,Pulp-Based,5.2,5.0,0.96,100,0.4,1.0,Low,True,Eggs/Produce,A,0.08,5.0,6.96
+49,Cotton Muslin Bag,Natural Fiber,7.0,10.0,0.99,100,0.8,2.8,Low,True,Bulk Foods,A,0.08,3.5714285714285716,5.561428571428571
+50,Reinforced Gummed Tape,Paper-Based,8.5,10.0,0.8,95,0.7,1.5,Medium,False,Logistics,A,0.06999999999999999,6.666666666666667,8.416666666666668
+51,Mycelium Leather,Natural Fiber,7.2,12.0,0.99,0,0.4,6.5,Medium,False,Luxury Fashion,A,0.03333333333333333,1.8461538461538463,2.836153846153846
+52,Grape Skin Bio-Plastic,Plant-Based Polymer,6.5,8.0,0.85,30,0.8,3.2,High,True,Wine/Food,A,0.1,2.5,3.65
+53,Recycled Cork Composite,Natural Fiber,5.8,5.0,0.92,80,0.5,2.8,High,False,Footwear,A,0.1,1.7857142857142858,3.5057142857142862
+54,Palm Leaf Plate,Natural Fiber,4.2,2.0,1.0,0,0.2,1.1,Medium,True,Food Service,A,0.1,1.8181818181818181,2.8181818181818183
+55,Recycled Nylon (Ocean Plastic),Recycled Plastic,9.2,35.0,0.05,100,1.4,4.0,High,False,Apparel,B,0.04,8.75,9.8
+56,Algae-Based Ink,Natural Fiber,1.0,0.1,1.0,0,0.1,12.0,Low,True,Printing,A,1.0,0.008333333333333333,1.0083333333333333
+57,Coffee Ground Composite,Bio-Composite,7.0,10.0,0.75,20,0.9,2.5,Medium,True,Housewares,B,0.09,4.0,4.95
+58,Wheat Straw Pulp,Pulp-Based,5.5,6.0,0.96,95,0.4,1.2,Low,True,Food Service,A,0.06666666666666667,5.0,6.91
+59,Recycled Rubber (Tires),Recycled Plastic,9.5,80.0,0.02,100,1.8,0.9,High,False,Industrial,C,0.0225,88.88888888888889,89.90888888888888
+60,Orange Peel Fiber,Natural Fiber,4.8,3.0,0.98,0,0.5,3.5,Low,True,Textiles,A,0.16666666666666666,0.8571428571428571,1.8371428571428572
+61,Chitin (Shellfish Bio-film),Natural Fiber,6.2,4.0,1.0,0,0.3,5.5,Medium,True,Pharma,A,0.075,0.7272727272727273,1.7272727272727273
+62,Recycled Tetrapak Board,Multi-Layer,7.5,18.0,0.35,75,1.1,1.5,High,False,Construction,C,0.061111111111111116,12.0,13.1
+63,Bio-Polypropylene (Tall Oil),Plant-Based Polymer,8.7,25.0,0.1,95,1.3,2.4,High,True,Medical,B,0.052000000000000005,10.416666666666668,11.466666666666669
+64,Recycled Cotton Felt,Natural Fiber,4.0,10.0,0.95,100,0.6,1.4,Low,False,Furniture Padding,A,0.06,7.142857142857143,9.092857142857143
+65,Stone Paper (R-PET base),Mineral-Based,8.2,15.0,0.15,85,1.0,2.2,High,False,Stationery,B,0.06666666666666667,6.8181818181818175,7.8181818181818175
+66,Casein (Milk Protein) Film,Natural Fiber,3.5,1.0,1.0,0,0.8,4.5,Low,True,Edible Packaging,A,0.8,0.2222222222222222,1.2222222222222223
+67,Recycled Polycarbonate,Recycled Plastic,9.4,45.0,0.0,100,1.9,3.2,High,False,Automotive,C,0.042222222222222223,14.0625,15.0625
+68,Liquid Wood (Arboform),Bio-Composite,9.0,30.0,0.8,60,0.9,3.8,High,False,Electronics,A,0.030000000000000002,7.894736842105264,9.294736842105264
+69,Recycled Copper Foil,Metal,6.0,5.0,0.0,100,1.5,8.5,High,False,High-Tech,B,0.3,0.5882352941176471,1.5882352941176472
+70,Pinatex (Pineapple Leaf),Natural Fiber,7.8,15.0,0.9,0,0.5,7.0,Medium,False,Fashion,A,0.03333333333333333,2.142857142857143,3.0428571428571427
+71,Biodegradable Bubble Wrap,Plant-Based Polymer,4.5,5.0,0.88,0,1.2,1.8,Medium,False,Logistics,B,0.24,2.7777777777777777,3.6577777777777776
+72,Coir (Coconut) Pot,Natural Fiber,6.5,10.0,1.0,0,0.3,0.8,High,False,Horticulture,A,0.03,12.5,13.5
+73,Recycled Glass Cullet,Glass,9.0,40.0,0.0,100,0.5,0.6,High,True,Construction,A,0.0125,66.66666666666667,67.66666666666667
+74,Corn Starch Loose Fill,Plant-Based Polymer,2.0,0.5,1.0,0,0.4,1.1,Low,True,Shipping,A,0.8,0.45454545454545453,1.4545454545454546
+75,Recycled Carbon Fiber,Composite,9.9,120.0,0.0,40,3.5,15.0,High,False,Aerospace,D,0.029166666666666667,8.0,8.4
+76,Felted Wool Insulator,Natural Fiber,5.0,12.0,1.0,100,1.0,4.5,Medium,True,Cold Chain,A,0.08333333333333333,2.6666666666666665,4.666666666666666
+77,Bio-Butanol Resin,Plant-Based Polymer,8.3,22.0,0.6,0,1.6,3.0,High,False,Coatings,B,0.07272727272727274,7.333333333333333,7.933333333333333
+78,Banana Fiber Paper,Natural Fiber,6.4,7.0,0.97,100,0.3,2.1,Low,True,Gift Wrap,A,0.04285714285714286,3.333333333333333,5.303333333333333
+79,Recycled PVC (Flooring),Recycled Plastic,8.9,55.0,0.0,90,2.1,1.2,High,False,Infrastructure,D,0.038181818181818185,45.833333333333336,46.733333333333334
+80,Rice Husk Ash Board,Bio-Composite,8.5,35.0,0.5,40,0.6,1.8,High,False,Building,B,0.017142857142857144,19.444444444444443,20.34444444444444
+81,Eco-Friendly Varnish,Plant-Based Polymer,1.5,0.1,0.9,0,0.7,5.0,High,True,Finishing,B,6.999999999999999,0.02,0.92
+82,Recycled Jute Sacking,Natural Fiber,9.0,50.0,0.98,100,0.4,1.1,Medium,True,Heavy Cargo,A,0.008,45.45454545454545,47.43454545454545
+83,Starch-Grafted PE,Plant-Based Polymer,7.5,15.0,0.45,60,1.7,1.9,High,True,Grocery,C,0.11333333333333333,7.894736842105264,8.944736842105264
+84,Recycled Plywood,Natural Fiber,8.8,100.0,0.85,80,0.8,0.7,Low,False,Crating,A,0.008,142.85714285714286,144.50714285714287
+85,Agar-Agar Film,Natural Fiber,2.5,0.3,1.0,0,0.2,6.0,Low,True,Confectionery,A,0.6666666666666667,0.049999999999999996,1.05
+86,Recycled PET Strapping,Recycled Plastic,9.3,70.0,0.1,100,1.0,1.4,High,False,Bundling,B,0.014285714285714285,50.0,51.1
+87,Soy-Based Adhesive,Plant-Based Polymer,4.0,5.0,0.95,0,0.5,2.5,Low,True,Binding,A,0.1,2.0,2.95
+88,Recycled Silver Foil,Metal,5.5,3.0,0.0,100,1.2,25.0,High,True,Jewelry,B,0.39999999999999997,0.12,1.12
+89,Abaca (Manila Hemp),Natural Fiber,9.1,25.0,0.98,100,0.5,3.5,High,False,Marine/Paper,A,0.02,7.142857142857143,9.122857142857143
+90,Recycled Polystyrene (EPS),Recycled Plastic,5.0,12.0,0.0,95,1.5,1.1,High,False,Insulation,C,0.125,10.909090909090908,11.859090909090908
+91,Bamboo Charcoal Board,Bio-Composite,8.2,28.0,0.7,30,0.8,2.9,Medium,False,Air Purification,B,0.028571428571428574,9.655172413793103,10.655172413793103
+92,Recycled Wood Flour,Natural Fiber,6.7,15.0,0.9,100,0.4,0.8,Low,False,Additives,A,0.02666666666666667,18.75,20.65
+93,Bio-Succinic Acid Plastic,Plant-Based Polymer,8.0,20.0,0.75,50,1.2,3.4,High,True,Bottles,B,0.06,5.882352941176471,7.132352941176471
+94,Recycled Lead Sheet,Metal,9.7,200.0,0.0,100,2.8,4.5,High,False,Shielding,D,0.013999999999999999,44.44444444444444,45.44444444444444
+95,Sunflower Seed Hull Board,Bio-Composite,7.1,18.0,0.88,20,0.5,2.3,Medium,False,Panels,A,0.027777777777777776,7.82608695652174,8.90608695652174
+96,Recycled ABS (Electronics),Recycled Plastic,8.6,30.0,0.0,100,1.7,2.1,High,False,Consumer Tech,C,0.056666666666666664,14.285714285714285,15.285714285714285
+97,Bio-Ethylene (Sugarcane),Plant-Based Polymer,8.4,18.0,0.1,100,0.9,1.8,High,True,Personal Care,B,0.05,10.0,11.1
+98,Recycled Cork Stopper,Natural Fiber,5.5,2.0,0.95,90,0.3,0.5,High,True,Beverage,A,0.15,4.0,5.85
+99,Flax Fiber Composite,Natural Fiber,8.8,24.0,0.82,50,0.6,4.2,Medium,False,Automotive,A,0.024999999999999998,5.714285714285714,7.034285714285714
+100,Recycled Leather Fiber,Natural Fiber,7.4,10.0,0.7,40,1.2,5.5,Medium,False,Luxury Packing,C,0.12,1.8181818181818181,2.918181818181818

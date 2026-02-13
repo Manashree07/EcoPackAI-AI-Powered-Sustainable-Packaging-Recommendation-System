@@ -1,0 +1,9 @@
+POST http://127.0.0.1:5000/recommend
+Content-Type: application/json
+
+{
+  "strength_score": 8,
+  "weight_capacity_kg": 12,
+  "biodegradability_score": 7,
+  "recyclability_percent": 85
+}

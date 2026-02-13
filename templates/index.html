@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>EcoPackAI Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">EcoPackAI Recommendation System</h2>
+
+<!-- ================= INPUT CARD ================= -->
+<div class="card p-4 shadow">
+
+<h4 class="mb-3">Enter Product Parameters</h4>
+
+<div class="mb-3">
+<label class="form-label">Strength Score (1 – 10)</label>
+<input type="number" id="strength" class="form-control"
+       placeholder="Enter strength score (e.g., 8)"
+       min="1" max="10" step="0.1" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Weight Capacity (kg)</label>
+<input type="number" id="weight" class="form-control"
+       placeholder="Enter weight capacity in kg (e.g., 12)"
+       min="0" step="0.1" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Biodegradability Score (1 – 10)</label>
+<input type="number" id="bio" class="form-control"
+       placeholder="Enter biodegradability score (e.g., 7)"
+       min="1" max="10" step="0.1" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Recyclability Percentage (0 – 100%)</label>
+<input type="number" id="recycle" class="form-control"
+       placeholder="Enter recyclability percentage (e.g., 85)"
+       min="0" max="100" step="1" required>
+</div>
+
+<button class="btn btn-primary w-100 mt-2" onclick="predict()">
+Get Recommendation
+</button>
+
+</div>
+
+<!-- ================= RESULT CARD ================= -->
+<div class="card p-4 mt-4 shadow">
+
+<h4>Recommendation Result</h4>
+
+<p><strong>Predicted Cost:</strong> ₹ <span id="cost">-</span></p>
+
+<p><strong>Predicted CO₂ Emission:</strong> <span id="co2">-</span> kg</p>
+
+<p><strong>Suitability Score:</strong> <span id="score">-</span></p>
+
+</div>
+
+<!-- ================= RANKING CARD ================= -->
+<div class="card p-4 mt-4 shadow">
+
+<h4>Material Ranking</h4>
+
+<table class="table table-bordered table-striped mt-3">
+
+<thead class="table-dark">
+
+<tr>
+<th>Material Name</th>
+<th>Predicted Cost</th>
+<th>Predicted CO₂</th>
+<th>Final Score</th>
+</tr>
+
+</thead>
+
+<tbody id="rankingTable"></tbody>
+
+</table>
+
+<button class="btn btn-success w-100" onclick="loadRanking()">
+Load Material Ranking
+</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+async function predict(){
+
+const strength = parseFloat(document.getElementById("strength").value);
+const weight = parseFloat(document.getElementById("weight").value);
+const bio = parseFloat(document.getElementById("bio").value);
+const recycle = parseFloat(document.getElementById("recycle").value);
+
+// Basic validation
+if(isNaN(strength) || isNaN(weight) || isNaN(bio) || isNaN(recycle)){
+    alert("Please fill all fields correctly.");
+    return;
+}
+
+let response = await fetch("/recommend", {
+
+method: "POST",
+
+headers: {"Content-Type": "application/json"},
+
+body: JSON.stringify({
+strength_score: strength,
+weight_capacity_kg: weight,
+biodegradability_score: bio,
+recyclability_percent: recycle
+})
+
+});
+
+let result = await response.json();
+
+document.getElementById("cost").innerText = result.predicted_cost.toFixed(2);
+document.getElementById("co2").innerText = result.predicted_co2.toFixed(2);
+document.getElementById("score").innerText = result.suitability_score.toFixed(2);
+
+}
+
+
+
+async function loadRanking(){
+
+let response = await fetch("/rank-materials");
+let data = await response.json();
+
+let table = document.getElementById("rankingTable");
+table.innerHTML = "";
+
+data.data.forEach(row => {
+
+table.innerHTML += `
+<tr>
+<td>${row.material_name}</td>
+<td>₹ ${row.predicted_cost.toFixed(2)}</td>
+<td>${row.predicted_co2.toFixed(2)} kg</td>
+<td>${row.final_score.toFixed(2)}</td>
+</tr>
+`;
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
